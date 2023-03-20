@@ -3,7 +3,6 @@ import itertools
 from math import prod
 
 def binary_ne_grid(cagey_grid):
-    ##IMPLEMENT
     var_array = [] #List to hold all the variables of the grid
     n = cagey_grid[0] #Dimension of the grid
     dom = [i for i in range(1, n + 1)] #Domain of the variables
@@ -29,7 +28,6 @@ def binary_ne_grid(cagey_grid):
 
 
 def nary_ad_grid(cagey_grid):
-    ## IMPLEMENT
     var_array = [] #List to hold all the variables of the grid
     n = cagey_grid[0] #Dimension of the grid
     dom = [i for i in range(1, n + 1)] #Domain of the variables
@@ -52,7 +50,6 @@ def nary_ad_grid(cagey_grid):
     return csp, var_array
 
 def cagey_csp_model(cagey_grid):
-    ## Implemented using binary_ne_grid
     csp, var_array = binary_ne_grid(cagey_grid)
     # Dimension of the board
     n = cagey_grid[0]
