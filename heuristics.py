@@ -1,6 +1,4 @@
 def ord_dh(csp):
-    ''' return variables according to the Degree Heuristic '''
-    # IMPLEMENT
     vars = csp.get_all_unasgn_vars()
     big = (vars[0], 0)
     for var in vars:
@@ -15,8 +13,6 @@ def ord_dh(csp):
     return big[0]
 
 def ord_mrv(csp):
-    ''' return variable according to the Minimum Remaining Values heuristic '''
-    # IMPLEMENT
     ordList = csp.get_all_unasgn_vars()
     next = ordList[0]
     for var in ordList:
